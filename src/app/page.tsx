@@ -24,20 +24,23 @@ export default function Home() {
       <div className="relative z-10 flex flex-col min-h-screen">
         <Header />
 
-        <main className="flex-1 flex items-center justify-center px-4 py-12">
-          <div className="text-center max-w-2xl">
+        <main className="flex-1 flex items-center justify-center md:mt-[-150px] px-4 py-12">
+          <div className="text-center ">
             {/* Main heading */}
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white text-balance">
+            <h1 className="md:text-5xl  mb-6 text-white ">
               Empowering you to Learn, Build, and Excel.
             </h1>
 
             {/* Subheading */}
-            <p className="text-lg text-gray-300 mb-12 text-balance">
-              Stay on track with weekly lessons, resources, and schedules designed to help you reach your goals faster.
+            <p className=" text-gray-300 mb-12 text-balance">
+              Stay on track with weekly lessons, resources, and schedules designed to <br /> help you reach your goals faster.
             </p>
 
+            <button className="bg-[#FB030C] p-2">
+              Start here
+            </button>
             {/* Role Selection Modal */}
-            <RoleSelectionModal selectedRole={selectedRole} setSelectedRole={setSelectedRole} />
+            {/* <RoleSelectionModal selectedRole={selectedRole} setSelectedRole={setSelectedRole} /> */}
           </div>
         </main>
       </div>
