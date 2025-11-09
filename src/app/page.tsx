@@ -83,7 +83,7 @@ const router = useRouter()
     },
     onError:(error)=>{
 
-alert("an error occured.")
+alert("an error occured")
 
 
     }

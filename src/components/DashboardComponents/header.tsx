@@ -10,10 +10,12 @@ export default function Header() {
   const router = useRouter()
   return (
     <header className="">
-      <div className="max-w-6xl mx-auto md:mt-[100px] md:mb-[-0px] mt-[20px] px-8 flex items-center justify-between">
+      <div className="max-w-6xl mx-auto py-[30px] md:mb-[-0px]  px-8 flex items-center justify-between">
         <div className="">
+
           <img src="/red-logo.png" alt="StreetOps Logo" className="md:h-[30px] h-[25px]" />
         </div>
+        
 
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-2">

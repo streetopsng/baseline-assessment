@@ -26,14 +26,14 @@ export default function BottomCards() {
         href={"https://docs.google.com/spreadsheets/d/1Zdz3gIDg7qU6AFWOhvxCre7TP4eceknGupniEP2PT9o/edit?gid=0#gid=0"} >View Schedule</Link>
       </Card>
 
-      <Card className="p-8 bg-white flex flex-col items-center text-center">
+      {/* <Card className="p-8 bg-white flex flex-col items-center text-center">
         <div className="bg-slate-900 p-4 rounded-lg mb-4">
           <Bell className="w-8 h-8 text-white" />
         </div>
         <h3 className="text-lg font-semibold text-slate-900 mb-2">Reflection</h3>
         <p className="text-sm text-slate-600 mb-6">Stay updated with important news and course updates.</p>
         <Button className="bg-red-600 hover:bg-red-700 text-white">Write</Button>
-      </Card>
+      </Card> */}
     </div>
   )
 }
