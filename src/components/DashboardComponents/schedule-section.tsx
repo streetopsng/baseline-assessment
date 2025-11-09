@@ -5,28 +5,28 @@ export default function ScheduleSection() {
   const courses = [
     {
       id: 1,
-      title: "Design Fundamentals",
-      description: "Introduction to design principles and color theory",
-      schedule: "Monday & Tuesday",
+      title: "Recap of the Previous week",
+      description: "Introduction to creative thinking",
+      schedule: "Monday",
       status: "Live",
       statusColor: "bg-green-100 text-green-700",
     },
     {
       id: 2,
-      title: "User Research Methods",
-      description: "Learn how to conduct effective user interviews",
-      schedule: "Wednesday",
+      title: "Creative thinking",
+      description: "Reflection",
+      schedule: "Tuesday",
       status: "Upcoming",
       statusColor: "bg-blue-100 text-blue-700",
     },
-    {
-      id: 3,
-      title: "Prototyping Workshop",
-      description: "Hands-on prototyping with Figma and Adobe XD",
-      schedule: "Friday",
-      status: "Workshop",
-      statusColor: "bg-pink-100 text-pink-700",
-    },
+    // {
+    //   id: 3,
+    //   title: "Prototyping Workshop",
+    //   description: "Hands-on prototyping with Figma and Adobe XD",
+    //   schedule: "Friday",
+    //   status: "Workshop",
+    //   statusColor: "bg-pink-100 text-pink-700",
+    // },
   ]
 
   return (
