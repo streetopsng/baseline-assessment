@@ -1,8 +1,10 @@
+"use client"
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Download } from "lucide-react"
 
 interface Course {
+  link: string | undefined
   id: number
   title: string
   description: string
@@ -25,11 +27,33 @@ export default function ScheduleCard({ course }: { course: Course }) {
       </div>
 
       <p className="text-sm text-slate-600 mb-4">{course.schedule}</p>
+{
+  course.link ? (
+<a href={course.link ? course.link : "#"} download={course.link ? true : false}>
+      <Button className="w-full bg-red-600 hover:bg-red-700 text-white"
+      // onClick={()=>{
 
-      <Button className="w-full bg-red-600 hover:bg-red-700 text-white">
-        {/* <Download className="w-4 h-4 mr-2" /> */}
-        Go to
+      //   if (!course.link) {
+          
+      //   }
+      // }}
+      >
+        <Download className="w-4 h-4 mr-2" />
+        Downlaod Resources
       </Button>
+</a>
+  ) : (
+    <Button className="w-full bg-red-600 hover:bg-red-700 text-white"
+    onClick={()=>{
+alert("Resources not currently available")
+    }}
+    >
+      <Download className="w-4 h-4 mr-2" />
+      Downlaod Resources
+    </Button>
+  )
+}
+
     </Card>
   )
 }

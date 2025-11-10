@@ -10,6 +10,7 @@ export default function ScheduleSection() {
       schedule: "Monday",
       status: "Live",
       statusColor: "bg-green-100 text-green-700",
+      link:"/files/assessment.pdf"
     },
     {
       id: 2,
@@ -18,6 +19,7 @@ export default function ScheduleSection() {
       schedule: "Tuesday",
       status: "Upcoming",
       statusColor: "bg-blue-100 text-blue-700",
+      link:""
     },
     // {
     //   id: 3,
