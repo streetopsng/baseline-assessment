@@ -190,7 +190,7 @@ src={item.image} />
 `}
       style={{
         backgroundImage:`url(${item.image})`,
-        // backgroundSize:"cover",
+        backgroundSize:"cover",
         backgroundRepeat:"no-repeat",
         
         backgroundPosition:"center",
