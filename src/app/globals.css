@@ -6,9 +6,9 @@
 @custom-variant dark (&:is(.dark *));
 
 
-body{
+/* html{
   overflow-x: hidden;
-}
+} */
 
 /* *{
   font-family: 'Bizmo Trial', sans-serif;                                             
