@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Download } from "lucide-react"
 
 interface Course {
+  link: string | undefined
   id: number
   title: string
   description: string
@@ -26,10 +27,12 @@ export default function ScheduleCard({ course }: { course: Course }) {
 
       <p className="text-sm text-slate-600 mb-4">{course.schedule}</p>
 
+<a href={course.link ? course.link : ""} download={course.link ? true : false}>
       <Button className="w-full bg-red-600 hover:bg-red-700 text-white">
-        {/* <Download className="w-4 h-4 mr-2" /> */}
-        Go to
+        <Download className="w-4 h-4 mr-2" />
+        downlaod resources
       </Button>
+</a>
     </Card>
   )
 }
