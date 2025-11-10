@@ -16,6 +16,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "StreetOps Academy",
   description: "StreetOps",
+  icons:{
+    icon:"/icon.png"
+  }
 };
 
 export default function RootLayout({
