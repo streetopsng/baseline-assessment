@@ -128,10 +128,10 @@ if (!formDetails.carName) {
   }
 
   return (
-    <div className="min-h-screen bg-black text-white overflow-hidden">
+    <div className="min-h-screen  max-w-screen bg-black text-white overflow-x-hidden">
       {/* Background image with overlay */}
       <div
-        className="absolute inset-0 bg-cover bg-center opacity-40"
+        className=" bg-cover bg-center opacity-40"
 
         // style={{
         //   backgroundImage:`url(/car-one.jpg)`,
@@ -174,9 +174,11 @@ src={item.image} />
 
       </div> */}
 
-<div className="absolute w-full h-full flex transition-all ease-in-out duration-300 "
+<div className="absolute overflow-x-hidden w-screen h-full">
+
+<div className=" w-full h-full flex transition-all ease-in-out duration-300 "
    style={{
-    transform:`translateX(-${curr * 100}%)`
+     transform:`translateX(-${curr * 100}%)`
    }}
    >
 
@@ -187,7 +189,7 @@ src={item.image} />
   >
     <div 
     className={`lg:bg-left-top w-full h-screen  md:px-4 px-2 flex flex-col justify-center md:bg-[length:100%] bg-cover 
-`}
+      `}
       style={{
         backgroundImage:`url(${item.image})`,
         backgroundSize:"cover",
@@ -206,12 +208,12 @@ src={item.image} />
   className="absolute w-full object-cover"
   fill
   />
-</div> */}
+  </div> */}
  
 {/* 
  <div className="absolute left-0 w-full h-full bg-black opacity-70">
-
-</div> */}
+ 
+ </div> */}
 
   
 
@@ -219,6 +221,7 @@ src={item.image} />
   </aside>
 })}
    </div>
+</div>
 
 
 

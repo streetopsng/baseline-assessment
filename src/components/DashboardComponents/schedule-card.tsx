@@ -39,7 +39,7 @@ export default function ScheduleCard({ course }: { course: Course }) {
       // }}
       >
         <Download className="w-4 h-4 mr-2" />
-        Downlaod Resources
+        Download Resources
       </Button>
 </a>
   ) : (
@@ -49,7 +49,7 @@ alert("Resources not currently available")
     }}
     >
       <Download className="w-4 h-4 mr-2" />
-      Downlaod Resources
+      Download Resources
     </Button>
   )
 }
