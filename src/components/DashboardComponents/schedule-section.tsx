@@ -34,7 +34,7 @@ export default function ScheduleSection() {
   return (
     <section className="mb-8">
       <div className="flex items-center gap-2 mb-6">
-        <h2 className="text-lg font-semibold text-slate-900">This week&apos;s Schedule</h2>
+        <h2 className="text-lg font-bold text-slate-900">Week Schedule</h2>
         <Calendar className="w-5 h-5 text-slate-600" />
       </div>
 
